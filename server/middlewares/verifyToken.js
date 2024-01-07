@@ -9,7 +9,7 @@ const verifyAccessToken = ansyncHandler(async (req, res, next) => {
                 success: false,
                 mes: 'Invalid access token'
             })
-            console.log("dkm decode =", decode)
+            // console.log("dkm decode =", decode)
             req.user = decode
             next()
         })
